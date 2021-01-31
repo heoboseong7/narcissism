@@ -26,5 +26,7 @@ class material(Purchase):
 
     unit = models.CharField(choices=UNIT_CHOICE, max_length=5, blank=True)
 
+    total = models.IntegerField()
+
 class immaterial(Purchase):
     pass
